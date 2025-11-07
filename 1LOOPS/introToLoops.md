@@ -24,6 +24,7 @@ for (let i = 0; i < 5; i++) {
     console.log(i); // Output: 0, 1, 2, 3, 4
 }
 ```
+---
 ### 2. While Loop
 * **When to Use:** When the **number of iterations is unknown** and depends on a condition.
 * **Structure:** Only the condition is defined; initialization and iteration are handled separately.
@@ -35,6 +36,7 @@ while (i < 5) {
     i++;
 }
 ```
+---
 ### 3. Do-While Loop
 * **When to Use:** When you want to ensure that the code block is executed **at least once** before checking the condition.
 * **Structure:** Similar to the while loop, but the condition is checked after the code block.
