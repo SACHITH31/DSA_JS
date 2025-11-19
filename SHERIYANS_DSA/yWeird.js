@@ -31,4 +31,6 @@ console.log('1' * 1) //0
 Number(12) // 12
 Number('12') // 12
 Number('a') // NaN
-Number('12a') // NaN
+Number('12a') // NaN (Not an Number)
+
+  //type casting: converting from data type to another type is called type casting or type converting
