@@ -39,3 +39,11 @@
 //     console.log(`${myNum} is odd number.`)
 //     // console.log((myNum & 1))
 // }
+
+//validation of age for vote
+const myAge = 18
+if (myAge >= 18) {
+    console.log('You are eligible')
+} else {
+    console.log('You are not eligible')
+}
