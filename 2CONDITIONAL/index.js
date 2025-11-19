@@ -74,24 +74,24 @@
 //     console.log(`You are pass with grade ${grade}`)
 // }
 
-const vowelsContainer = ['a', 'e', 'i', 'o', 'u']
-const myChar = 'Abcdef'
-const tempMyChar = myChar.toLowerCase()
+//vowels and consonants
+// const vowelsContainer = ['a', 'e', 'i', 'o', 'u']
+// const myChar = 'Abcdef'
+// const tempMyChar = myChar.toLowerCase()
+// let myObj = {}
+// if (vowelsContainer.includes(tempMyChar) && tempMyChar.length === 1) {
+//     console.log(`${myChar} is vowel`)
+// } else {
+//     console.log(myChar)
+//     for (let char of tempMyChar) {
+//         if (vowelsContainer.includes(char)) {
+//             // myObj[char.toUpperCase()] = 'vowel'
+//             console.log(`${char.toUpperCase()} is vowel`)
+//         } else {
+//             // myObj[char.toUpperCase()] = 'consonant'
+//             console.log(`${char.toUpperCase()} is consonant`)
+//         }
+//     }
+// }
+// // console.log(myObj)
 
-let myObj = {}
-
-if (vowelsContainer.includes(tempMyChar) && tempMyChar.length === 1) {
-    console.log(`${myChar} is vowel`)
-} else {
-    console.log(myChar)
-    for (let char of tempMyChar) {
-        if (vowelsContainer.includes(char)) {
-            // myObj[char.toUpperCase()] = 'vowel'
-            console.log(`${char.toUpperCase()} is vowel`)
-        } else {
-            // myObj[char.toUpperCase()] = 'consonant'
-            console.log(`${char.toUpperCase()} is consonant`)
-        }
-    }
-}
-// console.log(myObj)
