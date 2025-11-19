@@ -49,27 +49,49 @@
 // }
 
 //Grade Calculator
-const total = 400
-let grade;
-const subject1 = 90
-const subject2 = 90
-const subject3 = 90
-const subject4 = 90
-const totalObtained = subject1 + subject2 + subject3 + subject4
-// console.log(`The total marks obtained is: ${totalObtained}`)
-const percent = (totalObtained / total) * 100
-// console.log(`${percent}%`);
-if (percent <= 100) {
-    grade = 'A'
-} else if ((percent >= 80) && (percent <= 89)) {
-    grade = 'B'
-} else if ((percent >= 70) && (grade <= 79)) {
-    grade = 'C'
+// const total = 400
+// let grade;
+// const subject1 = 90
+// const subject2 = 90
+// const subject3 = 90
+// const subject4 = 90
+// const totalObtained = subject1 + subject2 + subject3 + subject4
+// // console.log(`The total marks obtained is: ${totalObtained}`)
+// const percent = (totalObtained / total) * 100
+// // console.log(`${percent}%`);
+// if (percent <= 100) {
+//     grade = 'A'
+// } else if ((percent >= 80) && (percent <= 89)) {
+//     grade = 'B'
+// } else if ((percent >= 70) && (grade <= 79)) {
+//     grade = 'C'
+// } else {
+//     grade = 'F'
+// }
+// if (grade === 'F') {
+//     console.log(`You are fail with grade ${grade}`)
+// } else {
+//     console.log(`You are pass with grade ${grade}`)
+// }
+
+const vowelsContainer = ['a', 'e', 'i', 'o', 'u']
+const myChar = 'Abcdef'
+const tempMyChar = myChar.toLowerCase()
+
+let myObj = {}
+
+if (vowelsContainer.includes(tempMyChar) && tempMyChar.length === 1) {
+    console.log(`${myChar} is vowel`)
 } else {
-    grade = 'F'
+    console.log(myChar)
+    for (let char of tempMyChar) {
+        if (vowelsContainer.includes(char)) {
+            // myObj[char.toUpperCase()] = 'vowel'
+            console.log(`${char.toUpperCase()} is vowel`)
+        } else {
+            // myObj[char.toUpperCase()] = 'consonant'
+            console.log(`${char.toUpperCase()} is consonant`)
+        }
+    }
 }
-if (grade === 'F') {
-    console.log(`You are fail with grade ${grade}`)
-} else {
-    console.log(`You are pass with grade ${grade}`)
-}
+// console.log(myObj)
