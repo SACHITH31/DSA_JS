@@ -24,3 +24,11 @@ console.log('1' * 1) //0
 //Type coercion in JavaScript refers to the process of converting a value from one data type to another. There are 2 types they are: 
 //  1. Implicit Coercion: done by JS ENGINE ONLY.
 //  2. Explicit Coercion: done by MANUALLY.
+
+// let age = Number(prompt("Enter age"))
+// console.log(typeof(age), age)
+
+Number(12) // 12
+Number('12') // 12
+Number('a') // NaN
+Number('12a') // NaN
