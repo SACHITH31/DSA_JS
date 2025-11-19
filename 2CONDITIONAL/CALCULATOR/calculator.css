@@ -27,6 +27,12 @@
     resize: none;
     outline: none;
     background: #f7f7f7;
+    text-align: right;
+    vertical-align: bottom;    
+    display: flex;           
+    align-items: flex-end;
+    justify-content: flex-end;    
+    padding: 10px;   
 }
 
 /* ===== Buttons Section ===== */

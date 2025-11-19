@@ -17,7 +17,6 @@ for (let button of buttons) {
         console.log("Cliced on =")
     } else {
         result.value += button.innerText
-        // console.log(typeof (result.value += button.innerText))
     }
     })
 }
