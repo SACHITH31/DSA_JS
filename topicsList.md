@@ -2,3 +2,4 @@
 
 ## LOOPS
 ## COERCION
+## Array Destructuring
