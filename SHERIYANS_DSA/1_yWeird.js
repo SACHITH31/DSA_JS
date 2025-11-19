@@ -34,3 +34,7 @@ Number('a') // NaN
 Number('12a') // NaN (Not an Number)
 
   //type casting: converting from data type to another type is called type casting or type converting
+
+// We can add many as many ; we want at the end in any languages it is possible
+console.log("Hello ");;;;;;;;;;;;;;;;;;;;;;;;;;
+console.log("Hello ");;;;;;;;;;;;;;;;;;;;;;;;;;
