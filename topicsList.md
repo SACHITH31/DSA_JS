@@ -1,3 +1,4 @@
 # 💻 DSA SHEET
 
 ## LOOPS
+## COERCION
