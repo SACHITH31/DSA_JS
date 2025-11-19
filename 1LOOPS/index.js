@@ -21,17 +21,34 @@
 // console.log(`Reversed Number of ${myNum} is: ${reversedNumber}`)
 
 //fibinooci upto n
-const endingRange = 8
-let num1 = 0
-let num2 = 1
-let result = num1 + num2
-console.log(num1)
-console.log(num2)
-for (let i = result; i <= endingRange; i++) {
-    if (result <= endingRange) {
-        console.log(result)
-        num1 = num2
-        num2 = result
-        result = num1 + num2
-    }
-}
+// const endingRange = 8
+// let num1 = 0
+// let num2 = 1
+// let result = num1 + num2
+// console.log(num1)
+// console.log(num2)
+// for (let i = result; i <= endingRange; i++) {
+//     if (result <= endingRange) {
+//         console.log(result)
+//         num1 = num2
+//         num2 = result
+//         result = num1 + num2
+//     }
+// }
+
+//palindrome number
+// const myNum = 122
+// let temp = myNum
+// let rem
+// let res = ''
+// while (temp != 0) {
+//     rem = temp % 10
+//     temp = Math.floor(temp / 10)
+//     res = res + rem
+// }
+// const reversedNumber = Number(res)
+// if (reversedNumber === myNum) {
+//     console.log(`${myNum} is palindrome`)
+// } else {
+//     console.log(`${myNum} is not palindrome`)
+// }
