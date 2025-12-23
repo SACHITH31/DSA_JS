@@ -3,14 +3,12 @@
 function secondLargestElement (myArr) {
     console.log(myArr)
     let big = myArr[0]
-    let position = null
     for (let i = 0; i < myArr.length; i++) {
         if (big < myArr[i]) {
             big = myArr[i]
-            position = i + 1
         }
     }
-    // console.log(big, position);
+    // console.log(big);
     const updatedArray = []
     for (let i = 0; i < myArr.length; i++) {
         if (myArr[i] != big) {
