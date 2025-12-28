@@ -36,3 +36,22 @@ function subArray (myArr) {
 }
 
 console.log(counter)
+
+
+
+// updated code 
+// let a = [1, 2, [-3, 4, [-5, 6, [-7]]]]
+// let counter = 0
+
+// function subArray(arr) {
+//   for (let i = 0; i < arr.length; i++) {
+//     if (typeof arr[i] === "object" && arr[i] !== null && arr[i].length !== undefined) {
+//       subArray(arr[i])
+//     } else if (arr[i] < 0) {
+//       counter++
+//     }
+//   }
+// }
+
+// subArray(a)
+// console.log(counter)
