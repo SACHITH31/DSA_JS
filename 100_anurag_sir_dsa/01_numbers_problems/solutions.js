@@ -41,3 +41,15 @@ showSumButton.addEventListener("click", () => {
   showResults.append(p);
   console.timeEnd();
 });
+
+
+const factorialButton = document.querySelector('.factorialButton')
+factorialButton.addEventListener('click', () => {
+    const p = document.createElement('p')
+    let result = 1
+    for (let i = 1; i <= datePicker.value; i++) {
+        result = result * i
+    }
+    p.innerText = `Factorial of ${datePicker.value} is :${result}`
+    showResults.append(p)
+})
