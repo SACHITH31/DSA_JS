@@ -31,13 +31,13 @@ evenSubmitButton.addEventListener("click", () => {
 
 const showSumButton = document.querySelector(".showSumButton");
 showSumButton.addEventListener("click", () => {
-  const temp = datePicker.value;
+  const n = datePicker.value;
   const p = document.createElement("p");
-  let sum = 0;
-  for (let i = 1; i <= temp; i++) {
-    sum = sum + i;
-  }
-  p.innerText = `The sum of 1 to ${temp} is: ${sum}`;
+  let sum = n * (n + 1) /2
+  const infoP = document.createElement('p')
+  infoP.innerText = `well when ever we do the sum upto the 100 crore number then it takes the time of 9 seconds(approx value) which is not an optimzed method so we use a formula to add the big big numbers is: n * (n + 1) / 2, and this will take time less than the 9 seconds(approx) where n is a number upto where we want to add from 1`
+  p.innerText = `The sum of 1 to ${n} is: ${sum}`;
+  showResults.append(infoP)
   showResults.append(p);
   console.timeEnd();
 });
@@ -68,3 +68,11 @@ const evenNumbersSumButton = document.querySelector('.evenNumbersSumButton').add
     showResults.append(p)
 })
 
+const squareNumbersButton = document.querySelector('.squareNumbersButton').addEventListener('click', () => {
+    const temp = datePicker.value
+    for (let i = 1; i <= temp; i++) {
+        const p = document.createElement('p')
+        p.innerText = i * i
+        showResults.append(p)
+    }
+})
