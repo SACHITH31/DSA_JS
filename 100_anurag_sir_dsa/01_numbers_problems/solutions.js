@@ -53,3 +53,18 @@ factorialButton.addEventListener('click', () => {
     p.innerText = `Factorial of ${datePicker.value} is :${result}`
     showResults.append(p)
 })
+
+const evenNumbersSumButton = document.querySelector('.evenNumbersSumButton').addEventListener('click', () => {
+    const temp = datePicker.value
+    const p = document.createElement('p')
+
+    let sum = 0
+    for (let i = 1; i <= temp; i++) {
+        if (i % 2 == 0) {
+            sum += i
+        }
+    }
+    p.innerText = sum
+    showResults.append(p)
+})
+
