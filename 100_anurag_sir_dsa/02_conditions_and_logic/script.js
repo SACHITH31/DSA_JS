@@ -93,3 +93,26 @@ function isLeapYear (year) {
 const year = 2000
 const result5 = isLeapYear(year)
 console.log(result5);
+
+
+// check if the character is uppercase, lowercase, digit or special character
+// special characters range: 33-47 && 58-64 && 91-96 && 123-126
+// digits characters range: 48-57
+// uppercase characters range: 65-90
+// lowercase characters range: 97-122
+function checkCharacterType (char) {
+    const asciiCode = char.charCodeAt()
+    if ((asciiCode >= 33 && asciiCode <= 47) || (asciiCode >= 58 && asciiCode <= 64) || (asciiCode >= 91 && asciiCode <= 96) || (asciiCode >= 123 && asciiCode <= 126)) {
+        return `${char} is character`        
+    } else if ((asciiCode >= 48 && asciiCode <= 57)) {
+        return `${char} is digits` 
+    } else if ((asciiCode >= 65 && asciiCode <= 90)) {
+        return `${char} is upper case` 
+    } else if ((asciiCode >= 97 && asciiCode <= 122)) {
+        return `${char} is lower case` 
+    }
+    return `Valid Type`
+}
+const char = 'a'
+const result6 = checkCharacterType(char)
+console.log(result6);
