@@ -68,10 +68,28 @@ function checkVowelOrConsonant (myChar) {
         } else {
             return `${myChar} is not an vowel.`
         }
-    } else {
-        return `Please Enter Valid Character`
     }
+    return `Please Enter Valid Character`
+    
 }
 const myChar = 'a'
 const result4 = checkVowelOrConsonant(myChar)
 console.log(result4);
+
+
+// find wheather the year is leap or not
+function isLeapYear (year) {
+    if (typeof year === 'number') {
+        if (year % 400 === 0) {
+            return `${year} is a leap year.`
+        } else if (year % 100 === 0) {
+            return `${year} is not a leap year.`
+        } else {
+            return `${year} is a leap year.`
+        }
+    }
+    return `Please Enter a valid number`
+}
+const year = 2000
+const result5 = isLeapYear(year)
+console.log(result5);
