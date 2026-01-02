@@ -59,4 +59,19 @@ const result3 = findCurrentBill(units)
 console.log(result3);
 
 
-
+// check wheather the character is a vowel or consonant
+function checkVowelOrConsonant (myChar) {
+    if (typeof myChar === 'string') {
+        const myCharUpperCase = myChar.toUpperCase()
+        if (myCharUpperCase === ('A' || 'E' || 'I' || 'O' || 'U')) {
+            return `${myChar} is a vowel.`
+        } else {
+            return `${myChar} is not an vowel.`
+        }
+    } else {
+        return `Please Enter Valid Character`
+    }
+}
+const myChar = 'a'
+const result4 = checkVowelOrConsonant(myChar)
+console.log(result4);
