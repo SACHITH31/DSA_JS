@@ -116,3 +116,21 @@ function checkCharacterType (char) {
 const char = 'a'
 const result6 = checkCharacterType(char)
 console.log(result6);
+
+
+// checking type of triangle
+function checkTriangleType (num1, num2, num3) {
+    const result = (num1 * num1) + (num2 * num2)
+    const num3Result = num3 * num3
+    if (result === num3Result) {
+        return `Right Angeled Triangle`
+    } else if (num1 === num2 && num2 === num3) {
+        return `Equilateral Triangle`
+    } else if ((num1 === num2 || num1 === num3) || (num2 === num3)) {
+        return `Isosceles Triangle`
+    } else {
+        return `Invalid`
+    }
+}
+const result7 = checkTriangleType(4, 4, 4)
+console.log(result7);
