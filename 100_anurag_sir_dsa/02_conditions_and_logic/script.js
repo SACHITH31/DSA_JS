@@ -129,8 +129,28 @@ function checkTriangleType (num1, num2, num3) {
     } else if ((num1 === num2 || num1 === num3) || (num2 === num3)) {
         return `Isosceles Triangle`
     } else {
-        return `Invalid`
+        return `Scalene`
     }
 }
 const result7 = checkTriangleType(4, 4, 4)
 console.log(result7);
+
+
+// calculate income tax
+
+// 2,50,001 - 5,00,000 => 5%
+// 5,00,001 - 10,00,000 => 20%
+// Above 10,00,000 => 5%
+// function calculateIncomeTax (incomeTax) {
+//     let tax = 0
+//     if (incomeTax <= 250000) {
+//         return tax
+//     } else if (incomeTax > 250000 && incomeTax <= 5000000) {
+//         tax = (250000 * 0.05) + ((incomeTax - 500000) * 0.2)
+//     } else if () {
+
+//     }
+// }
+// const incomeTax = 750000
+// const result8 = calculateIncomeTax(incomeTax)
+// // console.log(result8);
