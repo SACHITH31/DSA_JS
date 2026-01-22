@@ -89,6 +89,33 @@ const rows = 5;
         }
       }
     }
-    console.log(str);
+    // console.log(str);
   }
+}
+
+
+
+{
+  for (let i = rows; i >= 1; i--) {
+    let str = "";
+
+    for (let k = 1; k <= rows - i; k++) {
+      str += " ";
+    }
+
+    if (i === 1 || i === rows) {
+      for (let j = 1; j <= 2 * i - 1; j++) {
+        str += "*";
+      }
+    } else {
+      for (let j = 1; j <= 2 * i - 1; j++) {
+        if (j === 1 || j === 2 * i - 1) {
+          str += "*";
+        } else {
+          str += " ";
+        }
+      }
+    }
+    console.log(str);
+  } 
 }
