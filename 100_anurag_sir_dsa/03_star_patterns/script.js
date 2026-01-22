@@ -46,6 +46,30 @@ const rows = 5;
         for (let k = 1; k <= 2 * i - 1; k++) {
             temp += '*'
         }
-        console.log(temp)
+        // console.log(temp)
+    }
+}
+
+
+
+{
+    // debugger
+    for (let i = 1; i <= rows; i++) {
+        let temp = ''
+        if (i == 1 || i == rows) {
+            for (let j = 1; j <= rows; j++) {
+                temp += '*'
+            }
+            console.log(temp);
+        } else {
+            for (let j = 1; j <= rows; j++) {
+                if (j === 1 || j === rows) {
+                    temp += '*'
+                } else {
+                    temp += ' '
+                }
+            }
+            console.log(temp)
+        }
     }
 }
